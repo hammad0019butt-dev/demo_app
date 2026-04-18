@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                   );
                   prefs.setString(
                     KEYVALUE_INTEGER,
-                    numberController.toString(),
+                    numberController.text.toString(),
                   );
 
                   setState(() {});
@@ -142,7 +142,6 @@ class _HomePageState extends State<HomePage> {
               children: [
                 // List TIle
                 ListTile(
-
                   title: Text(
                     textValue,
                     style: TextStyle(
